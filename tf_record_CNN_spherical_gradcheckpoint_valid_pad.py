@@ -12,7 +12,7 @@ import time
 import json
 import pdb
 from NetBuilder_valid_pad import NetBuilder
-from layer_generator import generate
+# from layer_generator import generate
 from tfrecords_iterator import build_tfrecords_iterator
 from google.protobuf.json_format import MessageToJson
 from parse_nested_dictionary import parse_nested_dictionary
@@ -752,6 +752,8 @@ def tf_record_CNN_spherical(tone_version,itd_tones,ild_tones,manually_added,freq
 
     if testing:
         ##Testing loop
+        # from pdb import set_trace
+        # set_trace()
         for stim in model_version:
             sess.run(combined_iter.initializer)
             print ("Starting model version: ", stim)

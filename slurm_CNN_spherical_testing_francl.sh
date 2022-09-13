@@ -18,7 +18,8 @@
 module add openmind/singularity/2.5.1
 
 #Path to model folders
-model_path=/om2/user/francl/new_task_archs/new_task_archs_no_background_noise_80dBSNR_training
+# model_path=/om2/user/francl/new_task_archs/new_task_archs_no_background_noise_80dBSNR_training
+model_path=/home/marklind/research/binaural/BinauralLocalizationCNN/weights
 #Mdoel versions to test
 model_version=100000
 #Arch numbers to test
@@ -30,8 +31,10 @@ regularizer=None
 
 testing=True
 #Data to run through model
-bkgd_train_path_pattern=/om/scratch/Sat/francl/bkgdRecords_textures_sparse_sampled_same_texture_expanded_set_44.1kHz_stackedCH_upsampled/train*.tfrecords
-train_path_pattern=/om/scratch/Sat/francl/precedenceEffectRecords_45DegOffset_jitteredStart_jitteredPt5msDelay_expanded_stackedCH_upsampled/train*.tfrecords
+# bkgd_train_path_pattern=/om/scratch/Sat/francl/bkgdRecords_textures_sparse_sampled_same_texture_expanded_set_44.1kHz_stackedCH_upsampled/train*.tfrecords
+# train_path_pattern=/om/scratch/Sat/francl/precedenceEffectRecords_45DegOffset_jitteredStart_jitteredPt5msDelay_expanded_stackedCH_upsampled/train*.tfrecords
+bkgd_train_path_pattern=/data/binaural/binaural_localization_training_data/testset_record_subset/train*.tfrecords
+train_path_pattern=/data/binaural/binaural_localization_training_data/testset_record_subset/train*.tfrecords
 all_positions_bkgd=False
 background_textures=True
 #SNR min/max (DEFAULT: 5/40)

@@ -3,7 +3,7 @@ import tensorflow as tf
 import os
 import glob
 import numpy as np
-from layer_generator import generate
+# from layer_generator import generate
 import json
 import sys
 import pdb
